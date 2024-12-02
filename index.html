@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="Homepagestyle.css">
+  <link  id="style-change" rel="stylesheet" href="Homepagestyle-Default.css">
 </head>
 <body id="body">
 <div id="Main-container">
@@ -13,9 +13,9 @@
       <div id="Theme-container">
         <label for="Theme">Theme:</label>
         <select id="theme-selector">
-          <option>Default</option>
-          <option>Dark</option>
-          <option>Light</option>
+          <option class="opts">Default</option>
+          <option class="opts">Dark</option>
+          <option class="opts">Light</option>
         </select>
       </div>
     </div>
@@ -41,15 +41,15 @@
       </div>
       <div id="Amount">
         <h2>Amount</h2>
-        <input class="Amount" type="Text" value="">
-        <input class="Amount" type="Text" value="">
-        <input class="Amount" type="Text" value="">
-        <input class="Amount" type="Text" value="">
-        <input class="Amount" type="Text" value="">
-        <input class="Amount" type="Text" value="">
-        <input class="Amount" type="Text" value="">
-        <input class="Amount" type="Text" value="">
-        <input class="Amount" type="Text" value="">
+        <input class="Amount" type="number" value="">
+        <input class="Amount" type="number" value="">
+        <input class="Amount" type="number" value="">
+        <input class="Amount" type="number" value="">
+        <input class="Amount" type="number" value="">
+        <input class="Amount" type="number" value="">
+        <input class="Amount" type="number" value="">
+        <input class="Amount" type="number" value="">
+        <input class="Amount" type="number" value="">
       </div>
     </div>
     <div id="lowerbtns">
@@ -58,5 +58,6 @@
     </div>
   </div>
 </div>  
-    </body>
+<script src="mainlogic.js" ></script>
+</body>
 </html>
