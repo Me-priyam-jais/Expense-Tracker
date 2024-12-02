@@ -7,12 +7,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #035988;
   }
 #Main-container
   {
-  height:80%;
+  height:85%;
   width:90%;
-  border:5px solid #035988;
+  border:5px solid #023753;
   background-color:#12628c;
   border-radius: 10px;
   }
@@ -21,9 +22,13 @@
   display: flex;
   justify-content:space-between;
   }
+#A-E-btn,#D-E-btn
+  {
+  background-color: skyblue;
+  }
 #M-E-btn
 {
-background-color: white;
+background-color:skyblue;
 border:2px solid black;
 border-radius: 10px;
 font-size:15px;
@@ -36,7 +41,7 @@ label
 }
 #Theme-container
 {
-background-color: white;
+background-color:skyblue;
 border:2px solid black;
 border-radius: 10px;
 height:40px;
@@ -51,7 +56,7 @@ align-items: center;
 {
 border:0;
 font-size:16px;
-background-color: white;
+background-color:skyblue;
 outline: none;
 }
 .upper-btn
@@ -99,14 +104,14 @@ width:100px;
   {
   height:100%;
   width:50%;
-  background-color: aliceblue;
+  background-color:skyblue;
   text-align: center;
   border:5px solid black;
   border-radius: 10px;
   }
 #Amount
   {
-  background-color: aliceblue;
+  background-color:skyblue;
   height:100%;
   width:40%;
   border:5px solid black;
@@ -115,15 +120,21 @@ width:100px;
   }
 .Description
   {
-  width:90%;
+  width:95%;
   margin:2px 0px 2px 0px;
   text-align: start;
+  background-color:skyblue;
+  border-radius: 10px;
+  border:2px solid #035988;
   }
 .Amount
   {
-  width:90%;
+  width:95%;
   margin:2px 0px 2px 0px;
   text-align: center;
+  background-color:skyblue;
+  border-radius: 10px;
+  border:2px solid #035988;
   }
 #lowerbtns
   {
