@@ -1,0 +1,29 @@
+body
+{
+margin:0px;
+padding: 0%;
+height:100vh;
+width:100vw;
+background-color:#EDEAE0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#Main-container
+{
+height:80%;
+width:90%;
+background-color:#F9F6EE;
+border:5px solid #F5F5DC;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+button
+{
+width:10%;
+height:15%;
+border:0;
+}
+

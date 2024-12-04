@@ -1,18 +1,32 @@
+let themes=["Default","Dark","Light"];
+let currentTheme;
+if(page===1)
+{
 let themeType=document.querySelector("#style-change");
 let themeSelector=document.querySelector("#theme-selector");
-let options=document.querySelectorAll(".opts")
+let pageChanger=document.querySelector("#M-E-btn");
+currentTheme=themeSelector.value;
 themeSelector.addEventListener("change",()=>
 {
 if(themeSelector.value=="Default")
 {
-themeType.href="Homepagestyle-Default.css";
+currentTheme=themes[0];
+themeType.href=`Homepagestyle-${themes[0]}.css`;
 }
 else if(themeSelector.value=="Dark")
 {
-themeType.href="Homepagestyle-Dark.css"
+currentTheme=themes[1];
+themeType.href=`Homepagestyle-${themes[1]}.css`;
 }
 else
 {
-themeType.href="Homepagestyle-light.css"
+currentTheme=themes[2];
+themeType.href=`Homepagestyle-${themes[2]}.css`;
 }
 })
+pageChanger.addEventListener("click",()=>
+{
+window.location.href="monthlyexpense.html";
+})
+}
+
