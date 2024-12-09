@@ -118,7 +118,8 @@ width:100px;
   height:40%;
   border-radius: 10px;
   text-align: center;
-  display: none;
+  transition:1s;
+  display:none;
   }
 #Pop-Up-Text
   {

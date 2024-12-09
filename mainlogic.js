@@ -1,4 +1,5 @@
 let themes=["Default","Dark","Light"];
+let mainContainer=document.querySelector("#Main-container");
 let currentTheme;
 let expenseAdderBtn=document.querySelector("#A-E-btn");
 let expenseDesContainer=document.querySelector("#ExpenseDes");
@@ -7,6 +8,9 @@ let expenseRemoveBtn=document.querySelector("#D-E-btn");
 let themeType=document.querySelector("#style-change");
 let themeSelector=document.querySelector("#theme-selector");
 let pageChanger=document.querySelector("#M-E-btn");
+let dltPopup=document.querySelector("#Delete-Pop-Up");
+let YesBtn=document.querySelector("#YES");
+let NoBtn=document.querySelector("#NO");
 const themeChanger=()=>
     {
     if(themeSelector.value=="Default")
@@ -26,21 +30,34 @@ const themeChanger=()=>
         }
     }
 const expenseAdder=()=>
-    {
+{
+    let expenseNumber=document.querySelectorAll(".Description").length;
     let newdDesBtn=document.createElement("input");
     newdDesBtn.setAttribute("class","Description");
     newdDesBtn.setAttribute("type","Text");
+    newdDesBtn.value=`${expenseNumber+1}.`
     expenseDesContainer.appendChild(newdDesBtn);
     let newAmountbBtn=document.createElement("input")
     newAmountbBtn.setAttribute("class","Amount");
     newAmountbBtn.setAttribute("type","number");
     expentAmountContainer.appendChild(newAmountbBtn);
-    }
+}
 const transferTheme=()=>
     {
     sessionStorage.setItem("transferedTheme",currentTheme);
     }
-
+const deleteExpense=()=>
+    {
+    dltPopup.style.display="block";
+    NoBtn.addEventListener("click",()=>
+    {
+        dltPopup.style.display="none";
+    })
+    YesBtn.addEventListener("click",()=>
+    { 
+        dltPopup.style.display="none";
+    })
+    }
 currentTheme=themeSelector.value;
 themeSelector.addEventListener("change",()=>
 {
@@ -55,4 +72,6 @@ expenseAdderBtn.addEventListener("click",()=>
 {
 expenseAdder();
 })
-
+expenseRemoveBtn.addEventListener("click",()=>{
+deleteExpense();  
+})

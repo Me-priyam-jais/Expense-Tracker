@@ -111,7 +111,8 @@ width:100px;
   height:40%;
   border-radius: 10px;
   text-align: center;
-  display: none;
+  transition:1s;
+  display:none;
   }
 #Pop-Up-Text
   {
@@ -128,7 +129,7 @@ width:100px;
   }
 .Pop-Btns
   {
-  border:5px solid #E9DCC92;
+  border:5px solid #E9DCC9;
   border-radius: 10px;
   background-color: white;
   font-size: medium;
