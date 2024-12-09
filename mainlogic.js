@@ -75,4 +75,3 @@ expenseAdder();
 expenseRemoveBtn.addEventListener("click",()=>{
 deleteExpense();  
 })
-let hello=0;
