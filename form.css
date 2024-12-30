@@ -1,0 +1,72 @@
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100svh;
+    background-color:rgb(53, 53, 53) ;
+    margin: auto;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    width: 65vmin;
+    background-color: rgb(80, 80, 80);
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.4);
+}
+.input{
+    margin-top: 3vmin;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.user,.pass{
+    margin: 2vmin 0;
+    width: 100%;
+}
+.tag,.field{
+    font-size: clamp(20px,2.4vw,30px);
+    font-weight: 700;
+    font-family: monospace;
+    color: white;
+}
+.field{
+    font-size: clamp(15px,2vw,24px);
+    width:100%;
+    box-sizing:border-box;
+    padding: 2px 6px;
+}
+input{
+    background-color: grey;
+    color:  white;
+    outline: 0;
+    border: none;
+}
+button{
+    margin: 2rem 2rem 6vmin 2rem;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: clamp(1.6vmin,2vw,2vmin);
+    font-family: monospace;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 0 0.7vh rgba(0, 0, 0, 0.312);
+}
+.sign-up{
+    background-color: rgb(0, 110, 255);
+}
+.sign-up:hover{
+    box-shadow: 0 0 0.7vh rgb(129, 129, 255);
+    cursor: pointer;
+}
+.log-in{
+    background-color: rgb(19, 216, 19);
+}
+.log-in:hover{
+    box-shadow: 0 0 0.7vh rgb(66, 255, 66);
+    cursor: pointer;
+}
